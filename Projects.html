@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- Tab 2: Full "My Projects" page — detailed write-ups for each project -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects — KMS Laasya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">KMS<span>.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="about.html" class="nav-tab">About Me ↗</a></li>
+        <!-- "My Projects" is the active page -->
+        <li><a href="projects.html" class="nav-tab" style="background:var(--accent-dim);border-color:var(--accent);">My Projects ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section style="padding:9rem 6% 3rem;max-width:1100px;margin:0 auto;">
+    <div class="section-number">PORTFOLIO / <span>PROJECTS</span></div>
+    <h1 class="section-title" style="font-size:clamp(2rem,5vw,3.2rem);">My Projects</h1>
+    <div class="title-line"></div>
+    <p style="color:var(--muted);max-width:580px;font-size:0.95rem;line-height:1.8;margin-bottom:0;">
+      A detailed look at what I've built — the technologies used, the problems solved,
+      and what I learned along the way.
+    </p>
+  </section>
+
+  <!-- ===================== PROJECTS LIST ===================== -->
+  <section style="padding:2rem 6% 6rem;max-width:1100px;margin:0 auto;">
+
+    <!-- ====== PROJECT 1: WEATHER DASHBOARD ====== -->
+    <article class="project-full-card">
+
+      <!-- Banner: coloured gradient stands in for a screenshot -->
+      <!-- To use a real screenshot: <img src="assets/weather-preview.png" class="project-full-img"> -->
+      <div class="project-full-img project-img-1" style="height:220px;display:flex;align-items:center;justify-content:center;">
+        <!-- Large project number label inside the banner -->
+        <span style="font-family:'Space Grotesk',sans-serif;font-size:5rem;font-weight:700;color:rgba(126,200,227,0.2);user-select:none;">01</span>
+      </div>
+
+      <!-- Card body: description left | details right -->
+      <div class="project-full-body">
+
+        <!-- Left: title, description, features -->
+        <div>
+          <span class="project-tag" style="font-size:0.8rem;">HTML · CSS</span>
+          <h2>Weather Dashboard</h2>
+          <p>
+            A clean, responsive weather dashboard that displays current weather conditions
+            including temperature, humidity, wind speed, and a 5-day forecast. Designed with
+            a minimal card-based layout and a focus on readability and visual clarity.
+          </p>
+          <p>
+            The project was built as a front-end layout exercise — structuring complex data
+            visually using only HTML and CSS. Every component (forecast cards, temperature
+            gauges, location header) was hand-coded without any CSS frameworks.
+          </p>
+
+          <!-- What I learned -->
+          <span class="card-label">WHAT I LEARNED</span>
+          <ul class="feature-list">
+            <li>Structuring multi-section layouts using CSS Flexbox and Grid</li>
+            <li>Creating responsive designs with media queries for mobile and desktop</li>
+            <li>Using CSS custom properties (variables) for consistent theming</li>
+            <li>Designing reusable card components with hover effects and transitions</li>
+          </ul>
+
+          <!-- Project links -->
+          <div class="project-links">
+            <a href="https://github.com/KarempudiLaasya" class="btn btn-outline" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Right: tech stack + project details -->
+        <div>
+          <span class="card-label">TECH STACK</span>
+          <div class="tech-tags" style="margin-bottom:1.8rem;">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Flexbox</span>
+            <span class="tag">CSS Grid</span>
+            <span class="tag">Media Queries</span>
+            <span class="tag">CSS Variables</span>
+            <span class="tag">CSS Animations</span>
+          </div>
+
+          <span class="card-label">PROJECT DETAILS</span>
+          <!-- Key-value project info list -->
+          <div style="display:flex;flex-direction:column;gap:0.7rem;">
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+              <span style="color:var(--muted);">Type</span>
+              <span>Front-End UI</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+              <span style="color:var(--muted);">Category</span>
+              <span>Web Development</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+              <span style="color:var(--muted);">Status</span>
+              <span style="color:var(--accent);">InProgress</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+              <span style="color:var(--muted);">Year</span>
+              <span>2026</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ====== PROJECT 2: TO-DO LIST APP ====== -->
+    <article class="project-full-card">
+
+      <div class="project-full-img project-img-2" style="height:220px;display:flex;align-items:center;justify-content:center;">
+        <span style="font-family:'Space Grotesk',sans-serif;font-size:5rem;font-weight:700;color:rgba(126,200,227,0.2);user-select:none;">02</span>
+      </div>
+
+      <div class="project-full-body">
+
+        <!-- Left: title, description, features -->
+        <div>
+          <span class="project-tag" style="font-size:0.8rem;">HTML · CSS · JavaScript</span>
+          <h2>To-Do List App</h2>
+          <p>
+            A fully functional task management application built with vanilla HTML, CSS,
+            and JavaScript. Users can add new tasks, mark them as complete, delete them,
+            and assign priority labels (High / Medium / Low) to organise their workload.
+          </p>
+          <p>
+            The app uses the browser's <code style="background:var(--surface2);padding:0.1rem 0.4rem;border-radius:4px;font-size:0.85rem;">localStorage</code> API
+            to persist tasks between page refreshes — so your list is never lost when you close the tab.
+            This was my first project introducing JavaScript DOM manipulation and event handling.
+          </p>
+
+          <span class="card-label">KEY FEATURES</span>
+          <ul class="feature-list">
+            <li>Add, delete, and mark tasks as complete with instant DOM updates</li>
+            <li>Priority tags (High / Medium / Low) with colour-coded badges</li>
+            <li>Data persistence via localStorage — tasks survive page reloads</li>
+            <li>Filter view: show All / Active / Completed tasks</li>
+            <li>Task counter showing remaining incomplete items</li>
+            <li>Fully responsive — works on mobile and desktop</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/KarempudiLaasya" class="btn btn-outline" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Right: tech stack + project details -->
+        <div>
+          <span class="card-label">TECH STACK</span>
+          <div class="tech-tags" style="margin-bottom:1.8rem;">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript (ES6)</span>
+            <span class="tag">DOM Manipulation</span>
+            <span class="tag">Event Listeners</span>
+            <span class="tag">localStorage API</span>
+            <span class="tag">Flexbox</span>
+            <span class="tag">CSS Transitions</span>
+          </div>
+
+          <span class="card-label">PROJECT DETAILS</span>
+          <div style="display:flex;flex-direction:column;gap:0.7rem;">
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+              <span style="color:var(--muted);">Type</span>
+              <span>Web Application</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+              <span style="color:var(--muted);">Category</span>
+              <span>Productivity Tool</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
+              <span style="color:var(--muted);">Status</span>
+              <span style="color:var(--accent);">InProgress</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+              <span style="color:var(--muted);">Year</span>
+              <span>2026</span>
+            </div>
+          </div>
+
+          <!-- Highlight box: what made this project special -->
+          <div style="margin-top:1.8rem;background:var(--accent-dim);border:1px solid var(--accent);border-radius:var(--radius);padding:1rem 1.2rem;">
+            <span class="card-label" style="margin-bottom:0.4rem;">HIGHLIGHT</span>
+            <p style="font-size:0.83rem;color:var(--muted);line-height:1.7;">
+              First project to use JavaScript for real interactivity — moving beyond static HTML/CSS
+              into dynamic DOM updates and state management with localStorage.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- Back link -->
+    <div style="text-align:center;margin-top:1rem;">
+      <a href="index.html#projects" class="btn btn-secondary">← Back to Portfolio</a>
+    </div>
+
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="https://github.com/KarempudiLaasya" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/laasya-karempudi-705903399/" target="_blank">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2026 KMS Laasya. Built with HTML &amp; CSS.</p>
+  </footer>
+
+</body>
+</html>
