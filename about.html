@@ -5,60 +5,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me — KMS Laasya</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- ===================== NAVIGATION ===================== -->
-  <!-- Same navbar as index.html; "About Me" tab is visually active via inline style -->
-  <header class="navbar">
-    <a href="index.html" class="nav-logo">KMS<span>.</span></a>
+<header class="navbar">
+  <a href="#home" class="nav-logo">KMS<span>.</span></a>
+
+  <div class="navbar-right">
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <!-- "About Me" tab is the active page — highlighted with accent background -->
-        <li><a href="about.html" class="nav-tab" style="background:var(--accent-dim);border-color:var(--accent);">About Me ↗</a></li>
-        <li><a href="projects.html" class="nav-tab">My Projects ↗</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+
+    <!-- THEME TOGGLE BUTTON -->
+    <button class="theme-toggle" id="themeToggle">
+      <span class="toggle-icon">🌞</span>
+    </button>
+  </div>
+</header>
 
   <!-- ===================== PAGE HERO ===================== -->
-  <!-- Two-column: profile image left | intro text right -->
   <div class="page-hero">
 
-    <!-- Left: profile image placeholder -->
     <div class="page-hero-img">
-      <!-- Replace this div with <img src="assets/profile.jpg" class="profile-photo"> when ready -->
-      <div class="profile-placeholder" style="width:200px;height:200px;font-size:2rem;">KL</div>
+      <div class="profile-placeholder" style="width:200px;height:200px;font-size:1.9rem;">KL</div>
     </div>
 
-    <!-- Right: name, role, quick facts -->
     <div>
       <div class="section-number" style="margin-bottom:0.8rem;">01 / <span>ABOUT ME</span></div>
       <h1 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">KMS Laasya</h1>
       <div class="title-line"></div>
-      <p style="color:var(--accent);font-size:1rem;font-weight:500;margin-bottom:1rem;">
+      <p style="color:var(--accent);font-size:0.97rem;font-weight:500;margin-bottom:1rem;">
         Computer Science Student · Aspiring Developer
       </p>
-      <p style="color:var(--muted);font-size:0.93rem;line-height:1.8;max-width:520px;margin-bottom:1.5rem;">
+      <p style="color:var(--muted);font-size:0.92rem;line-height:1.85;max-width:520px;margin-bottom:1.5rem;">
         I'm a first-year B.Tech Computer Science student at Hyderabad, passionate about problem
         solving, algorithms, and artificial intelligence. I believe in writing clear, logical code
         and continuously challenging my analytical thinking through projects and competitions.
       </p>
-      <!-- Quick fact chips -->
-      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+      <div style="display:flex;gap:0.7rem;flex-wrap:wrap;">
         <span class="tag">📍 Hyderabad, India</span>
         <span class="tag">🎓 B.Tech CSE Year 1</span>
         <span class="tag">💼 Open to Internships</span>
       </div>
-      <!-- Social links -->
-      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
-        <a href="https://github.com/KarempudiLaasya" target="_blank" class="btn btn-outline">GitHub</a>
+      <div style="display:flex;gap:0.9rem;flex-wrap:wrap;margin-top:1.5rem;">
+        <a href="https://github.com/KarempudiLaasya" target="_blank" class="btn btn-secondary">GitHub</a>
         <a href="https://www.linkedin.com/in/laasya-karempudi-705903399/" target="_blank" class="btn btn-primary">LinkedIn</a>
       </div>
     </div>
@@ -66,7 +64,6 @@
   </div>
 
   <!-- ===================== EDUCATION SECTION ===================== -->
-  <!-- Timeline-style cards for academic background -->
   <section class="education-section">
 
     <div class="section-number">02 / <span>EDUCATION</span></div>
@@ -75,46 +72,60 @@
 
     <div class="edu-cards">
 
-      <!-- Current degree — most prominent -->
       <div class="edu-card">
         <div>
-          <!-- Degree name and institution -->
           <h3>B.Tech in Computer Science &amp; Engineering</h3>
           <p>Currently pursuing my undergraduate degree, focusing on core CS fundamentals —
             data structures and algorithms, and web development.</p>
-          <p style="margin-top:0.5rem;font-size:0.82rem;color:var(--accent);">
+          <p style="margin-top:0.5rem;font-size:0.81rem;color:var(--accent);">
             Key subjects: DSA · OOP · Maths for CS
           </p>
         </div>
+<<<<<<< HEAD
         <!-- Year badge on the right -->
         <div style="text-align:right;">
           <span class="edu-year">2025 – 2029</span>
           <p style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem;">Year 1 / Ongoing</p>
+=======
+        <div style="text-align:right;flex-shrink:0;">
+          <span class="edu-year">2025 – 2029</span>
+          <p style="font-size:0.79rem;color:var(--muted);margin-top:0.4rem;">Year 1 / Ongoing</p>
+>>>>>>> 612fec5 (dark and light theme)
         </div>
       </div>
 
-      <!-- High School -->
       <div class="edu-card">
         <div>
           <h3>Class XII — MPC (Maths, Physics, Chemistry)</h3>
           <p>Completed senior secondary education with a focus on Mathematics and Science,
             building a strong analytical foundation for Computer Science.</p>
         </div>
+<<<<<<< HEAD
         <div style="text-align:right;">
           <span class="edu-year">2023 – 2025</span>
           <p style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem;">Hyderabad, India</p>
+=======
+        <div style="text-align:right;flex-shrink:0;">
+          <span class="edu-year">2023 – 2025</span>
+          <p style="font-size:0.79rem;color:var(--muted);margin-top:0.4rem;">Hyderabad, India</p>
+>>>>>>> 612fec5 (dark and light theme)
         </div>
       </div>
 
-      <!-- Class X -->
       <div class="edu-card">
         <div>
           <h3>Class X — Central Board of Secondary Education (CBSE)</h3>
           <p>Completed secondary education with strong performance in Mathematics and Science.</p>
         </div>
+<<<<<<< HEAD
         <div style="text-align:right;">
           <span class="edu-year">2023</span>
           <p style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem;">Hyderabad, India</p>
+=======
+        <div style="text-align:right;flex-shrink:0;">
+          <span class="edu-year">2023</span>
+          <p style="font-size:0.79rem;color:var(--muted);margin-top:0.4rem;">Hyderabad, India</p>
+>>>>>>> 612fec5 (dark and light theme)
         </div>
       </div>
 
@@ -122,19 +133,16 @@
   </section>
 
   <!-- ===================== SKILLS ===================== -->
-  <!-- Full skills breakdown — categorised -->
   <section style="padding:4rem 6%;max-width:1100px;margin:0 auto;border-top:1px solid var(--border);">
 
     <div class="section-number">03 / <span>SKILLS</span></div>
     <h2 class="section-title">Tech Stack</h2>
     <div class="title-line"></div>
 
-    <!-- Two rows of categorised skill pills -->
     <div style="display:flex;flex-direction:column;gap:1.8rem;">
 
-      <!-- Row 1: Web -->
       <div>
-        <p class="tech-label">WEB DEVELOPMENT</p>
+        <p class="tech-label">Web Development</p>
         <div class="tech-tags">
           <span class="tag">HTML5</span>
           <span class="tag">CSS3</span>
@@ -144,9 +152,8 @@
         </div>
       </div>
 
-      <!-- Row 2: Programming -->
       <div>
-        <p class="tech-label">PROGRAMMING</p>
+        <p class="tech-label">Programming</p>
         <div class="tech-tags">
           <span class="tag">Python</span>
           <span class="tag">C (basics)</span>
@@ -155,9 +162,8 @@
         </div>
       </div>
 
-      <!-- Row 3: Tools -->
       <div>
-        <p class="tech-label">TOOLS &amp; PLATFORMS</p>
+        <p class="tech-label">Tools &amp; Platforms</p>
         <div class="tech-tags">
           <span class="tag">Git</span>
           <span class="tag">GitHub</span>
@@ -170,7 +176,6 @@
   </section>
 
   <!-- ===================== WHAT I'M CURRENTLY DOING ===================== -->
-  <!-- Cards showing active pursuits: studying, building, learning -->
   <section class="currently-section" style="border-top:1px solid var(--border);">
 
     <div class="section-number">04 / <span>CURRENTLY</span></div>
@@ -179,7 +184,6 @@
 
     <div class="currently-grid">
 
-      <!-- Card 1: Studying -->
       <div class="currently-card">
         <span class="c-big-icon">📚</span>
         <h3>Studying DSA</h3>
@@ -187,7 +191,6 @@
           stacks, queues, and sorting algorithms in Python and C.</p>
       </div>
 
-      <!-- Card 2: Building -->
       <div class="currently-card">
         <span class="c-big-icon">🛠️</span>
         <h3>Building Projects</h3>
@@ -195,7 +198,6 @@
           currently working on a Weather Dashboard using HTML &amp; CSS.</p>
       </div>
 
-      <!-- Card 3: Exploring AI -->
       <div class="currently-card">
         <span class="c-big-icon">🤖</span>
         <h3>Exploring AI Concepts</h3>
@@ -203,7 +205,6 @@
           and how AI models are trained — aiming to build a small ML project soon.</p>
       </div>
 
-      <!-- Card 4: Open Source -->
       <div class="currently-card">
         <span class="c-big-icon">🐙</span>
         <h3>Learning Git &amp; GitHub</h3>
@@ -224,6 +225,10 @@
     </div>
     <p class="footer-copy">© 2026 KMS Laasya. Built with HTML &amp; CSS.</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html> 
+>>>>>>> 612fec5 (dark and light theme)

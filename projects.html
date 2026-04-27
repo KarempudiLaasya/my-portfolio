@@ -11,20 +11,25 @@
 <body>
 
   <!-- ===================== NAVIGATION ===================== -->
-  <header class="navbar">
-    <a href="index.html" class="nav-logo">KMS<span>.</span></a>
+<header class="navbar">
+  <a href="#home" class="nav-logo">KMS<span>.</span></a>
+
+  <div class="navbar-right">
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="about.html" class="nav-tab">About Me ↗</a></li>
-        <!-- "My Projects" is the active page -->
-        <li><a href="projects.html" class="nav-tab" style="background:var(--accent-dim);border-color:var(--accent);">My Projects ↗</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+
+    <!-- THEME TOGGLE BUTTON -->
+    <button class="theme-toggle" id="themeToggle">
+      <span class="toggle-icon">🌞</span>
+    </button>
+  </div>
+</header>
 
   <!-- ===================== PAGE HEADER ===================== -->
   <section style="padding:9rem 6% 3rem;max-width:1100px;margin:0 auto;">
@@ -226,6 +231,6 @@
     </div>
     <p class="footer-copy">© 2026 KMS Laasya. Built with HTML &amp; CSS.</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

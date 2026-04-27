@@ -5,28 +5,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KMS Laasya — Portfolio</title>
-  <!-- Google Fonts: Space Grotesk for modern dark-theme aesthetic -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- ===================== NAVIGATION ===================== -->
-  <!-- Fixed top bar; 4 scroll links + 2 tab links to separate pages -->
-  <header class="navbar">
-    <a href="#home" class="nav-logo">KMS<span>.</span></a>
+<header class="navbar">
+  <a href="#home" class="nav-logo">KMS<span>.</span></a>
+
+  <div class="navbar-right">
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <!-- Tab links: open the two new dedicated pages -->
-        <li><a href="about.html" class="nav-tab">About Me ↗</a></li>
-        <li><a href="projects.html" class="nav-tab">My Projects ↗</a></li>
       </ul>
     </nav>
-  </header>
+
+    <!-- THEME TOGGLE BUTTON -->
+    <button class="theme-toggle" id="themeToggle">
+      <span class="toggle-icon">🌞</span>
+    </button>
+  </div>
+</header>
 
   <!-- ===================== HERO SECTION ===================== -->
   <section id="home" class="hero">
@@ -42,23 +45,19 @@
       </div>
     </div>
 
-    <!-- Profile image area — replace div with <img src="assets/profile.jpg"> when ready -->
     <div class="hero-image">
-      <!-- Profile image " -->
-        <img src="Profile_color.png" alt="KMS Laasya" class="profile-photo" />
+      <img src="Profile_color.png" alt="KMS Laasya" class="profile-photo" />
     </div>
 
   </section>
 
   <!-- ===================== ABOUT SUMMARY ===================== -->
-  <!-- Quick snapshot of who I am — styled like Image 2 (numbered label + bio + tech tags) -->
   <section id="about" class="about-summary">
 
     <div class="section-number">01 / <span>ABOUT</span></div>
     <h2 class="section-title">Who I Am</h2>
     <div class="title-line"></div>
 
-    <!-- Two-column: bio text left | tech tags right -->
     <div class="about-summary-grid">
 
       <div class="about-bio">
@@ -79,9 +78,8 @@
         </ul>
       </div>
 
-      <!-- Tech stack pill tags (matches Image 2) -->
       <div class="tech-stack">
-        <p class="tech-label">TECH STACK</p>
+        <p class="tech-label">Tech Stack</p>
         <div class="tech-tags">
           <span class="tag">HTML5</span>
           <span class="tag">CSS3</span>
@@ -97,7 +95,6 @@
   </section>
 
   <!-- ===================== PROJECTS SUMMARY ===================== -->
-  <!-- Two mini project cards; full details live on projects.html -->
   <section id="projects" class="projects-summary">
 
     <div class="section-number">02 / <span>PROJECTS</span></div>
@@ -106,7 +103,6 @@
 
     <div class="projects-grid">
 
-      <!-- Card 1: Weather Dashboard -->
       <article class="project-card">
         <div class="project-img project-img-1">
           <div class="project-overlay">
@@ -120,7 +116,6 @@
         </div>
       </article>
 
-      <!-- Card 2: To-Do List App -->
       <article class="project-card">
         <div class="project-img project-img-2">
           <div class="project-overlay">
@@ -143,24 +138,17 @@
   </section>
 
   <!-- ===================== CONTACT SECTION ===================== -->
-  <!-- Layout matches Image 1: info left, form right, dark background -->
   <section id="contact" class="contact">
 
     <div class="section-number">03 / <span>CONTACT ME</span></div>
     <h2 class="section-title">Get In Touch</h2>
     <div class="title-line"></div>
 
-    <!-- Two-column grid: contact details | form -->
     <div class="contact-grid">
 
-      <!-- Left: vertical accent bar + details list -->
       <div class="contact-info">
         <div class="contact-bar"></div>
         <ul class="contact-details">
-          <!-- <li>
-            <span class="c-icon">📞</span>
-            <span>Phone: <a href="tel:+918328149238">+91 8328149238</a></span>
-          </li> -->
           <li>
             <span class="c-icon">✉️</span>
             <span>Email: <a href="mailto:kmslaasya@gmail.com">kmslaasya@gmail.com</a></span>
@@ -176,7 +164,6 @@
         </ul>
       </div>
 
-      <!-- Right: mailto form — no JS, pure HTML -->
       <div class="contact-form-wrap">
         <form class="contact-form" action="mailto:kmslaasya@gmail.com" method="GET" enctype="text/plain">
           <input  type="text"  name="name"  placeholder="Your Name"  class="form-input" required />
@@ -199,6 +186,6 @@
     </div>
     <p class="footer-copy">© 2026 KMS Laasya. Built with HTML &amp; CSS.</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
