@@ -11,7 +11,7 @@
   --surface2:   #1e1e1e;        /* Slightly lighter surface for inputs */
   --ink:        #f0f0f0;        /* Primary text — near white */
   --muted:      #8a8a8a;        /* Muted / secondary text */
-  --accent:     #7ec8e3;        /* Sky blue accent (matches Image 1 button) */
+  --accent:     #f6b6ff;        /* Baby pink accent (matches Image 1 button) */
   --accent-dim: rgba(126,200,227,0.15); /* Dimmed accent for hover fills */
   --border:     #2a2a2a;        /* Subtle border */
   --shadow:     0 4px 30px rgba(0,0,0,0.4);
