@@ -5,25 +5,26 @@
 
 /* ===================== LIGHT THEME (DEFAULT) ===================== */
 :root {
-  --bg: #fdfaf6;          /* warm off-white (main background) */
-  --surface: #f6f1ea;     /* cards */
-  --surface2: #efe7dc;    /* inputs / subtle sections */
-  --ink: #2c2c2c;         /* text (not pure black) */
-  --muted: #7a756e;       /* secondary text */
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface2: #eef2f7;
 
---accent: #2563eb;
---accent-mid: #3b82f6;
---accent-dim: rgba(37,99,235,0.12);
+  --ink: #1a1d23;
+  --muted: #717784;
 
-  --border: #e4ddd4;
-  --border-mid: #d6cec4;
+  --accent: #5b7cfa;
+  --accent-mid: #4f46e5;
+  --accent-dim: rgba(91,124,250,0.12);
 
-  --shadow: 0 4px 20px rgba(0,0,0,0.06);
+  --border: #e6eaf0;
+  --border-mid: #d8dde6;
 
-  --navbar-bg: rgba(253,250,246,0.9);
-  --footer-bg: #f6f1ea;
-  --footer-text: #7a756e;
-  --footer-copy: #a39d96;
+  --shadow: 0 8px 30px rgba(0,0,0,0.06);
+
+  --navbar-bg: rgba(255,255,255,0.7);
+  --footer-bg: #eef2f7;
+  --footer-text: #717784;
+  --footer-copy: #9aa1ac;
 }
 
 /* ===================== DARK THEME ===================== */
