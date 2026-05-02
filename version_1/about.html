@@ -1,98 +1,91 @@
 <!DOCTYPE html>
+<!-- Tab 1: Full "About Me" page — education, bio, and what I'm currently doing -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me — KMS Laasya</title>
-  <!-- Keeping your requested fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles_purple_with_cursor.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Custom Cursor Elements -->
-  <!-- <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div> -->
-
-  <!-- Decorative Floating Butterflies -->
-<div class="butterfly-layer">
-  <div class="butterfly" style="top: 15%; left: 5%; animation-delay: 0s;"></div>
-  <div class="butterfly" style="top: 45%; left: 85%; animation-delay: -4s;"></div>
-  <div class="butterfly" style="top: 75%; left: 15%; animation-delay: -8s;"></div>
-</div>
-
+  <div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
   <!-- ===================== NAVIGATION ===================== -->
-  <header class="navbar">
-    <a href="index.html" class="nav-logo">KMS<span>.</span></a>
+<header class="navbar">
+  <a href="#home" class="nav-logo">KMS<span>.</span></a>
 
-    <div class="navbar-right">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-      </nav>
+  <div class="navbar-right">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="#about">About</a></li> -->
+        <li><a href="projects.html">Projects</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </nav>
 
-      <!-- THEME TOGGLE BUTTON -->
-      <button class="theme-toggle" id="themeToggle">
-        <span class="toggle-icon">☀️</span>
-      </button>
-    </div>
-  </header>
+    <!-- THEME TOGGLE BUTTON -->
+    <button class="theme-toggle" id="themeToggle">
+      <span class="toggle-icon">🌞</span>
+    </button>
+  </div>
+</header>
 
   <!-- ===================== PAGE HERO ===================== -->
   <div class="page-hero">
-    <div class="page-hero-img fade-up">
-      <!-- Using your profile photo class from styles.css -->
-      <div class="profile-placeholder">KL</div>
+
+    <div class="page-hero-img">
+      <div class="profile-placeholder" style="width:200px;height:200px;font-size:1.9rem;">KL</div>
     </div>
 
-    <div class="fade-up" style="transition-delay: 0.2s;">
+    <div>
       <div class="section-number" style="margin-bottom:0.8rem;">01 / <span>ABOUT ME</span></div>
-      <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,3.5rem);">KMS Laasya</h1>
+      <h1 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">KMS Laasya</h1>
       <div class="title-line"></div>
-      
-      <p style="color:var(--accent); font-size:1.05rem; font-weight:600; margin-bottom:1rem; font-family:var(--font-head);">
+      <p style="color:var(--accent);font-size:0.97rem;font-weight:500;margin-bottom:1rem;">
         Computer Science Student · Aspiring Developer
       </p>
-      
-      <p style="color:var(--muted); font-size:0.92rem; line-height:1.85; max-width:520px; margin-bottom:1.5rem;">
+      <p style="color:var(--muted);font-size:0.92rem;line-height:1.85;max-width:520px;margin-bottom:1.5rem;">
         I'm a first-year B.Tech Computer Science student at Hyderabad, passionate about problem
         solving, algorithms, and artificial intelligence. I believe in writing clear, logical code
         and continuously challenging my analytical thinking through projects and competitions.
       </p>
-
-      <div style="display:flex; gap:0.7rem; flex-wrap:wrap; margin-bottom: 2rem;">
+      <div style="display:flex;gap:0.7rem;flex-wrap:wrap;">
         <span class="tag">📍 Hyderabad, India</span>
         <span class="tag">🎓 B.Tech CSE Year 1</span>
         <span class="tag">💼 Open to Internships</span>
       </div>
-
-      <div style="display:flex; gap:0.9rem; flex-wrap:wrap;">
+      <div style="display:flex;gap:0.9rem;flex-wrap:wrap;margin-top:1.5rem;">
         <a href="https://github.com/KarempudiLaasya" target="_blank" class="btn btn-secondary">GitHub</a>
         <a href="https://www.linkedin.com/in/laasya-karempudi-705903399/" target="_blank" class="btn btn-primary">LinkedIn</a>
       </div>
     </div>
+
   </div>
 
   <!-- ===================== EDUCATION SECTION ===================== -->
-  <section class="education-section fade-up">
+  <section class="education-section">
+
     <div class="section-number">02 / <span>EDUCATION</span></div>
     <h2 class="section-title">Academic Background</h2>
     <div class="title-line"></div>
 
     <div class="edu-cards">
+
       <div class="edu-card">
         <div>
           <h3>B.Tech in Computer Science &amp; Engineering</h3>
           <p>Currently pursuing my undergraduate degree, focusing on core CS fundamentals —
             data structures and algorithms, and web development.</p>
-          <p style="margin-top:0.5rem; font-size:0.81rem; color:var(--accent); font-weight:600;">
+          <p style="margin-top:0.5rem;font-size:0.81rem;color:var(--accent);">
             Key subjects: DSA · OOP · Maths for CS
           </p>
         </div>
-        <div style="text-align:right; flex-shrink:0;">
+        <div style="text-align:right;flex-shrink:0;">
           <span class="edu-year">2025 – 2029</span>
-          <p style="font-size:0.79rem; color:var(--muted); margin-top:0.4rem;">Year 1 / Ongoing</p>
+          <p style="font-size:0.79rem;color:var(--muted);margin-top:0.4rem;">Year 1 / Ongoing</p>
         </div>
       </div>
 
@@ -102,32 +95,35 @@
           <p>Completed senior secondary education with a focus on Mathematics and Science,
             building a strong analytical foundation for Computer Science.</p>
         </div>
-        <div style="text-align:right; flex-shrink:0;">
+        <div style="text-align:right;flex-shrink:0;">
           <span class="edu-year">2023 – 2025</span>
-          <p style="font-size:0.79rem; color:var(--muted); margin-top:0.4rem;">Hyderabad, India</p>
+          <p style="font-size:0.79rem;color:var(--muted);margin-top:0.4rem;">Hyderabad, India</p>
         </div>
       </div>
 
       <div class="edu-card">
         <div>
-          <h3>Class X — CBSE</h3>
+          <h3>Class X — Central Board of Secondary Education (CBSE)</h3>
           <p>Completed secondary education with strong performance in Mathematics and Science.</p>
         </div>
-        <div style="text-align:right; flex-shrink:0;">
+        <div style="text-align:right;flex-shrink:0;">
           <span class="edu-year">2023</span>
-          <p style="font-size:0.79rem; color:var(--muted); margin-top:0.4rem;">Hyderabad, India</p>
+          <p style="font-size:0.79rem;color:var(--muted);margin-top:0.4rem;">Hyderabad, India</p>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- ===================== SKILLS ===================== -->
-  <section class="fade-up" style="border-top:1px solid var(--border);">
+  <section style="padding:4rem 6%;max-width:1100px;margin:0 auto;border-top:1px solid var(--border);">
+
     <div class="section-number">03 / <span>SKILLS</span></div>
     <h2 class="section-title">Tech Stack</h2>
     <div class="title-line"></div>
 
-    <div style="display:flex; flex-direction:column; gap:2.5rem;">
+    <div style="display:flex;flex-direction:column;gap:1.8rem;">
+
       <div>
         <p class="tech-label">Web Development</p>
         <div class="tech-tags">
@@ -135,6 +131,7 @@
           <span class="tag">CSS3</span>
           <span class="tag">Responsive Design</span>
           <span class="tag">Flexbox &amp; Grid</span>
+          <span class="tag">Media Queries</span>
         </div>
       </div>
 
@@ -154,41 +151,50 @@
           <span class="tag">Git</span>
           <span class="tag">GitHub</span>
           <span class="tag">VS Code</span>
+          <span class="tag">Linux (basics)</span>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- ===================== WHAT I'M CURRENTLY DOING ===================== -->
-  <section class="currently-section fade-up" style="border-top:1px solid var(--border);">
+  <section class="currently-section" style="border-top:1px solid var(--border);">
+
     <div class="section-number">04 / <span>CURRENTLY</span></div>
     <h2 class="section-title">What I'm Up To</h2>
     <div class="title-line"></div>
 
     <div class="currently-grid">
+
       <div class="currently-card">
-        <span class="c-big-icon">📖</span>
+        <span class="c-big-icon">📚</span>
         <h3>Studying DSA</h3>
-        <p>Working through Data Structures &amp; Algorithms — arrays, linked lists, and sorting in Python.</p>
+        <p>Working through Data Structures &amp; Algorithms — arrays, linked lists,
+          stacks, queues, and sorting algorithms in Python and C.</p>
       </div>
 
       <div class="currently-card">
-        <span class="c-big-icon">⚙️</span>
+        <span class="c-big-icon">🛠️</span>
         <h3>Building Projects</h3>
-        <p>Creating small web and Python projects — currently working on a Weather Dashboard.</p>
+        <p>Creating small web and Python projects to apply classroom concepts —
+          currently working on a Weather Dashboard using HTML &amp; CSS.</p>
       </div>
 
       <div class="currently-card">
-        <span class="c-big-icon">⚡</span>
-        <h3>Exploring AI</h3>
-        <p>Reading about machine learning fundamentals and neural networks training.</p>
+        <span class="c-big-icon">🤖</span>
+        <h3>Exploring AI Concepts</h3>
+        <p>Reading about machine learning fundamentals, neural networks,
+          and how AI models are trained — aiming to build a small ML project soon.</p>
       </div>
 
       <div class="currently-card">
-        <span class="c-big-icon">🌐</span>
-        <h3>Version Control</h3>
-        <p>Practicing branching workflows and hosting all my projects on GitHub.</p>
+        <span class="c-big-icon">🐙</span>
+        <h3>Learning Git &amp; GitHub</h3>
+        <p>Practicing version control, branching workflows, and collaborating
+          via pull requests — hosting all projects on GitHub.</p>
       </div>
+
     </div>
   </section>
 
@@ -200,10 +206,9 @@
       <a href="https://github.com/KarempudiLaasya" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/laasya-karempudi-705903399/" target="_blank">LinkedIn</a>
     </div>
-    <p class="footer-copy">© 2026 KMS Laasya. Built with Royal Purple & Orchid.</p>
+    <p class="footer-copy">© 2026 KMS Laasya. Built with HTML &amp; CSS.</p>
   </footer>
-
-  <script src="script.js"></script>
-  <script src="cursor.js"></script>
+<script src="script.js"></script>
+<script src="cursor.js"></script>
 </body>
-</html>
+</html> 

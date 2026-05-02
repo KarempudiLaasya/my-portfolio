@@ -1,0 +1,267 @@
+projects.html_bkp
+<!DOCTYPE html>
+<!-- Projects page — KMS Laasya -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects — KMS Laasya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">KMS<span>.</span></a>
+    <div class="navbar-right">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle"><span class="toggle-icon">🌞</span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="padding:9rem 6% 3rem;max-width:1100px;margin:0 auto;">
+    <div class="section-number">PORTFOLIO / <span>PROJECTS</span></div>
+    <h1 class="section-title" style="font-size:clamp(2rem,5vw,3.2rem);">My Projects</h1>
+    <div class="title-line"></div>
+    <p style="color:var(--muted);max-width:580px;font-size:0.95rem;line-height:1.8;">
+      A detailed look at what I've built — the technologies used, the problems solved, and what I learned along the way.
+    </p>
+  </section>
+
+  <!-- PROJECTS LIST -->
+  <section style="padding:2rem 6% 6rem;max-width:1100px;margin:0 auto;">
+
+    <!-- PROJECT 1: WEATHER DASHBOARD -->
+    <article class="project-full-card">
+      <div class="project-full-img project-img-1">
+        <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="skyW" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#89c4f4"/>
+              <stop offset="100%" style="stop-color:#fde8e0"/>
+            </linearGradient>
+            <linearGradient id="sunW" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#f9d74b"/>
+              <stop offset="100%" style="stop-color:#f0a500"/>
+            </linearGradient>
+          </defs>
+          <rect width="900" height="220" fill="url(#skyW)"/>
+          <circle cx="760" cy="60" r="48" fill="url(#sunW)" opacity="0.9"/>
+          <g stroke="#f9d74b" stroke-width="2.5" stroke-linecap="round" opacity="0.5">
+            <line x1="760" y1="4" x2="760" y2="0"/>
+            <line x1="760" y1="116" x2="760" y2="122"/>
+            <line x1="704" y1="60" x2="698" y2="60"/>
+            <line x1="816" y1="60" x2="822" y2="60"/>
+            <line x1="720" y1="20" x2="716" y2="16"/>
+            <line x1="800" y1="100" x2="804" y2="104"/>
+            <line x1="720" y1="100" x2="716" y2="104"/>
+            <line x1="800" y1="20" x2="804" y2="16"/>
+          </g>
+          <!-- Cloud big -->
+          <g opacity="0.95">
+            <ellipse cx="340" cy="70" rx="80" ry="36" fill="white"/>
+            <ellipse cx="282" cy="82" rx="50" ry="28" fill="white"/>
+            <ellipse cx="396" cy="82" rx="48" ry="28" fill="white"/>
+          </g>
+          <!-- Cloud small -->
+          <g opacity="0.75">
+            <ellipse cx="130" cy="50" rx="55" ry="24" fill="white"/>
+            <ellipse cx="88" cy="60" rx="36" ry="18" fill="white"/>
+            <ellipse cx="172" cy="60" rx="36" ry="18" fill="white"/>
+          </g>
+          <!-- Rain drops under cloud -->
+          <g fill="#89c4f4" opacity="0.7">
+            <ellipse cx="298" cy="124" rx="3.5" ry="8"/>
+            <ellipse cx="320" cy="136" rx="3.5" ry="8"/>
+            <ellipse cx="342" cy="122" rx="3.5" ry="8"/>
+            <ellipse cx="364" cy="132" rx="3.5" ry="8"/>
+            <ellipse cx="386" cy="120" rx="3.5" ry="8"/>
+          </g>
+          <!-- Main dashboard card -->
+          <rect x="30" y="128" width="220" height="76" rx="14" fill="rgba(255,255,255,0.88)" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"/>
+          <text x="50" y="164" font-family="Georgia,serif" font-size="36" font-weight="700" fill="#2a1f1a">24°C</text>
+          <text x="50" y="184" font-family="Arial,sans-serif" font-size="11" fill="#8a7068" font-weight="600" letter-spacing="0.1em">PARTLY CLOUDY · HYD</text>
+          <!-- Forecast mini cards -->
+          <rect x="264" y="128" width="66" height="76" rx="12" fill="rgba(255,255,255,0.80)" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"/>
+          <text x="284" y="152" font-family="Arial" font-size="11" fill="#8a7068">MON</text>
+          <text x="278" y="180" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#2a1f1a">22°</text>
+          <rect x="338" y="128" width="66" height="76" rx="12" fill="rgba(255,255,255,0.80)" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"/>
+          <text x="358" y="152" font-family="Arial" font-size="11" fill="#8a7068">TUE</text>
+          <text x="352" y="180" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#2a1f1a">27°</text>
+          <rect x="412" y="128" width="66" height="76" rx="12" fill="rgba(255,255,255,0.80)" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"/>
+          <text x="432" y="152" font-family="Arial" font-size="11" fill="#8a7068">WED</text>
+          <text x="426" y="180" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#e8604c">30°</text>
+          <!-- Humidity widget -->
+          <rect x="496" y="128" width="110" height="76" rx="12" fill="rgba(255,255,255,0.80)" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"/>
+          <text x="512" y="152" font-family="Arial" font-size="10" fill="#8a7068" letter-spacing="0.07em">HUMIDITY</text>
+          <text x="512" y="180" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#2a1f1a">68%</text>
+          <!-- Project number watermark -->
+          <text x="618" y="200" font-family="Georgia,serif" font-size="120" font-weight="700" fill="rgba(255,255,255,0.3)" user-select="none">01</text>
+        </svg>
+      </div>
+
+      <div class="project-full-body">
+        <div>
+          <span class="project-tag" style="font-size:0.8rem;">HTML · CSS</span>
+          <h2>Weather Dashboard</h2>
+          <p>A clean, responsive weather dashboard that displays current weather conditions including temperature, humidity, wind speed, and a 5-day forecast. Designed with a minimal card-based layout and a focus on readability and visual clarity.</p>
+          <p>Built as a front-end layout exercise — structuring complex data visually using only HTML and CSS, with every component hand-coded without any CSS frameworks.</p>
+          <span class="card-label">WHAT I LEARNED</span>
+          <ul class="feature-list">
+            <li>Structuring multi-section layouts using CSS Flexbox and Grid</li>
+            <li>Creating responsive designs with media queries for mobile and desktop</li>
+            <li>Using CSS custom properties (variables) for consistent theming</li>
+            <li>Designing reusable card components with hover effects and transitions</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/KarempudiLaasya" class="btn btn-outline" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div>
+          <span class="card-label">TECH STACK</span>
+          <div class="tech-tags" style="margin-bottom:1.8rem;">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Flexbox</span>
+            <span class="tag">CSS Grid</span>
+            <span class="tag">Media Queries</span>
+            <span class="tag">CSS Variables</span>
+          </div>
+          <span class="card-label">PROJECT DETAILS</span>
+          <div style="display:flex;flex-direction:column;gap:0.7rem;">
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;"><span style="color:var(--muted);">Type</span><span>Front-End UI</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;"><span style="color:var(--muted);">Category</span><span>Web Development</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;"><span style="color:var(--muted);">Status</span><span style="color:var(--accent);">In Progress</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;"><span style="color:var(--muted);">Year</span><span>2026</span></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2: TO-DO LIST -->
+    <article class="project-full-card">
+      <div class="project-full-img project-img-2">
+        <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="appBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#e8f0ff"/>
+              <stop offset="100%" style="stop-color:#efe8ff"/>
+            </linearGradient>
+          </defs>
+          <rect width="900" height="220" fill="url(#appBg2)"/>
+          <circle cx="800" cy="40" r="80" fill="rgba(124,106,247,0.12)"/>
+          <circle cx="80" cy="190" r="60" fill="rgba(200,140,255,0.12)"/>
+          <!-- App window shadow -->
+          <rect x="110" y="18" width="440" height="186" rx="16" fill="rgba(100,80,200,0.08)" transform="translate(6,8)"/>
+          <!-- App window -->
+          <rect x="110" y="18" width="440" height="186" rx="16" fill="white"/>
+          <!-- Header -->
+          <rect x="110" y="18" width="440" height="44" rx="16" fill="#7c6af7"/>
+          <rect x="110" y="44" width="440" height="18" fill="#7c6af7"/>
+          <text x="134" y="46" font-family="Georgia,serif" font-size="15" font-weight="700" fill="white">My Tasks</text>
+          <text x="430" y="44" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.7)">3 of 5 done</text>
+          <!-- Task 1 done -->
+          <rect x="126" y="74" width="408" height="30" rx="8" fill="#f3f0ff"/>
+          <rect x="136" y="83" width="12" height="12" rx="3" fill="#7c6af7"/>
+          <text x="138" y="93" font-family="Arial" font-size="9" fill="white" font-weight="700">✓</text>
+          <text x="158" y="93" font-family="Arial" font-size="12" fill="#b0a0d0" text-decoration="line-through">Design the homepage layout</text>
+          <rect x="446" y="80" width="40" height="16" rx="8" fill="#dcfce7"/>
+          <text x="452" y="91" font-family="Arial" font-size="9" fill="#16a34a" font-weight="600">Done</text>
+          <!-- Task 2 in progress -->
+          <rect x="126" y="110" width="408" height="30" rx="8" fill="#fff8f0"/>
+          <rect x="136" y="119" width="12" height="12" rx="3" fill="none" stroke="#f0a500" stroke-width="2"/>
+          <circle cx="142" cy="125" r="3" fill="#f0a500"/>
+          <text x="158" y="130" font-family="Arial" font-size="12" fill="#2a1f1a">Write CSS for all components</text>
+          <rect x="424" y="117" width="62" height="16" rx="8" fill="#fef3c7"/>
+          <text x="430" y="128" font-family="Arial" font-size="9" fill="#d97706" font-weight="600">In Progress</text>
+          <!-- Task 3 todo -->
+          <rect x="126" y="146" width="408" height="30" rx="8" fill="#f8f8f8"/>
+          <rect x="136" y="155" width="12" height="12" rx="3" fill="none" stroke="#d0d0d0" stroke-width="1.5"/>
+          <text x="158" y="165" font-family="Arial" font-size="12" fill="#2a1f1a">Add JavaScript interactions</text>
+          <rect x="446" y="153" width="40" height="16" rx="8" fill="#fee2e2"/>
+          <text x="452" y="164" font-family="Arial" font-size="9" fill="#ef4444" font-weight="600">High</text>
+          <!-- Side stats -->
+          <rect x="570" y="18" width="160" height="90" rx="14" fill="rgba(124,106,247,0.12)" stroke="rgba(124,106,247,0.2)" stroke-width="1.5"/>
+          <text x="590" y="50" font-family="Georgia,serif" font-size="32" font-weight="700" fill="#7c6af7">3/5</text>
+          <text x="590" y="70" font-family="Arial" font-size="10" fill="#8a78d0" letter-spacing="0.06em">TASKS DONE</text>
+          <!-- Progress bar -->
+          <rect x="590" y="82" width="120" height="8" rx="4" fill="rgba(124,106,247,0.2)"/>
+          <rect x="590" y="82" width="72" height="8" rx="4" fill="#7c6af7"/>
+          <!-- Watermark -->
+          <text x="720" y="210" font-family="Georgia,serif" font-size="120" font-weight="700" fill="rgba(124,106,247,0.12)" user-select="none">02</text>
+        </svg>
+      </div>
+
+      <div class="project-full-body">
+        <div>
+          <span class="project-tag" style="font-size:0.8rem;">HTML · CSS · JavaScript</span>
+          <h2>To-Do List App</h2>
+          <p>A fully functional task management application built with vanilla HTML, CSS, and JavaScript. Users can add tasks, mark them complete, delete them, and assign priority labels to organise their workload.</p>
+          <p>The app uses <code style="background:var(--surface2);padding:0.1rem 0.4rem;border-radius:4px;font-size:0.85rem;">localStorage</code> to persist tasks between page refreshes. This was my first project introducing JavaScript DOM manipulation and event handling.</p>
+          <span class="card-label">KEY FEATURES</span>
+          <ul class="feature-list">
+            <li>Add, delete, and mark tasks as complete with instant DOM updates</li>
+            <li>Priority tags (High / Medium / Low) with colour-coded badges</li>
+            <li>Data persistence via localStorage — tasks survive page reloads</li>
+            <li>Filter view: show All / Active / Completed tasks</li>
+            <li>Fully responsive — works on mobile and desktop</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/KarempudiLaasya" class="btn btn-outline" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div>
+          <span class="card-label">TECH STACK</span>
+          <div class="tech-tags" style="margin-bottom:1.8rem;">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript ES6</span>
+            <span class="tag">DOM Manipulation</span>
+            <span class="tag">localStorage API</span>
+            <span class="tag">Flexbox</span>
+          </div>
+          <span class="card-label">PROJECT DETAILS</span>
+          <div style="display:flex;flex-direction:column;gap:0.7rem;">
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;"><span style="color:var(--muted);">Type</span><span>Web Application</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;"><span style="color:var(--muted);">Category</span><span>Productivity Tool</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;"><span style="color:var(--muted);">Status</span><span style="color:var(--accent);">In Progress</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;"><span style="color:var(--muted);">Year</span><span>2026</span></div>
+          </div>
+          <div style="margin-top:1.8rem;background:var(--accent-dim);border:1px solid var(--accent);border-radius:var(--radius);padding:1rem 1.2rem;">
+            <span class="card-label" style="margin-bottom:0.4rem;">HIGHLIGHT</span>
+            <p style="font-size:0.83rem;color:var(--muted);line-height:1.7;">First project to use JavaScript for real interactivity — moving beyond static HTML/CSS into dynamic DOM updates and state management.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div style="text-align:center;margin-top:1rem;">
+      <a href="index.html#projects" class="btn btn-secondary">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="https://github.com/KarempudiLaasya" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/laasya-karempudi-705903399/" target="_blank">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2026 KMS Laasya. Built with HTML &amp; CSS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="cursor.js"></script>
+</body>
+</html>

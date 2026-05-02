@@ -1,81 +1,88 @@
 <!DOCTYPE html>
-<!-- Tab 2: Full "My Projects" page — detailed write-ups for each project -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Projects — KMS Laasya</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles_purple_with_cursor.css" />
 </head>
 <body>
-  <div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-  <!-- ===================== NAVIGATION ===================== -->
-<header class="navbar">
-  <a href="#home" class="nav-logo">KMS<span>.</span></a>
+  <!-- Custom Cursor Elements -->
+  <!-- <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div> -->
 
-  <div class="navbar-right">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <!-- <li><a href="#projects">Projects</a></li> -->
-        <!-- <li><a href="#contact">Contact</a></li> -->
-      </ul>
-    </nav>
+  <!-- Decorative Floating Butterflies -->
+<div class="butterfly-layer">
+  <div class="butterfly" style="top: 15%; left: 5%; animation-delay: 0s;"></div>
+  <div class="butterfly" style="top: 45%; left: 85%; animation-delay: -4s;"></div>
+  <div class="butterfly" style="top: 75%; left: 15%; animation-delay: -8s;"></div>
+</div>
 
-    <!-- THEME TOGGLE BUTTON -->
-    <button class="theme-toggle" id="themeToggle">
-      <span class="toggle-icon">🌞</span>
-    </button>
-  </div>
-</header>
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">KMS<span>.</span></a>
+    <div class="navbar-right">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle">
+        <span class="toggle-icon">🌞</span>
+      </button>
+    </div>
+  </header>
 
-  <!-- ===================== PAGE HEADER ===================== -->
-  <section style="padding:9rem 6% 3rem;max-width:1100px;margin:0 auto;">
+  <!-- PAGE HEADER -->
+  <header style="padding:9rem 6% 3rem; max-width:1100px; margin:0 auto;" class="fade-up">
     <div class="section-number">PORTFOLIO / <span>PROJECTS</span></div>
-    <h1 class="section-title" style="font-size:clamp(2rem,5vw,3.2rem);">My Projects</h1>
+    <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,3.5rem);">My Projects</h1>
     <div class="title-line"></div>
-    <p style="color:var(--muted);max-width:580px;font-size:0.95rem;line-height:1.8;margin-bottom:0;">
-      A detailed look at what I've built — the technologies used, the problems solved,
-      and what I learned along the way.
+    <p style="color:var(--muted); max-width:580px; font-size:0.95rem; line-height:1.8;">
+      A detailed look at what I've built — the technologies used, the problems solved, and the journey of learning through code.
     </p>
-  </section>
+  </header>
 
-  <!-- ===================== PROJECTS LIST ===================== -->
-  <section style="padding:2rem 6% 6rem;max-width:1100px;margin:0 auto;">
+  <!-- PROJECTS LIST -->
+  <main style="padding:2rem 6% 6rem; max-width:1100px; margin:0 auto;">
 
-    <!-- ====== PROJECT 1: WEATHER DASHBOARD ====== -->
-    <article class="project-full-card">
-
-      <!-- Banner: coloured gradient stands in for a screenshot -->
-      <!-- To use a real screenshot: <img src="assets/weather-preview.png" class="project-full-img"> -->
-      <div class="project-full-img project-img-1" style="height:220px;display:flex;align-items:center;justify-content:center;">
-        <!-- Large project number label inside the banner -->
-        <span style="font-family:'Space Grotesk',sans-serif;font-size:5rem;font-weight:700;color:rgba(126,200,227,0.2);user-select:none;">01</span>
+    <!-- PROJECT 1: WEATHER DASHBOARD -->
+    <article class="project-full-card fade-up">
+      <div class="project-full-img project-img-1">
+        <!-- Kept your original Weather SVG -->
+        <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="skyW" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--accent-soft)"/>
+              <stop offset="100%" style="stop-color:var(--surface2)"/>
+            </linearGradient>
+            <linearGradient id="sunW" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--accent2)"/>
+              <stop offset="100%" style="stop-color:var(--accent)"/>
+            </linearGradient>
+          </defs>
+          <rect width="900" height="220" fill="url(#skyW)"/>
+          <circle cx="760" cy="60" r="48" fill="url(#sunW)" opacity="0.6"/>
+          <g opacity="0.95">
+            <ellipse cx="340" cy="70" rx="80" ry="36" fill="white"/>
+            <ellipse cx="282" cy="82" rx="50" ry="28" fill="white"/>
+            <ellipse cx="396" cy="82" rx="48" ry="28" fill="white"/>
+          </g>
+          <rect x="30" y="128" width="220" height="76" rx="14" fill="rgba(255,255,255,0.85)"/>
+          <text x="50" y="164" font-family="var(--font-head)" font-size="36" font-weight="700" fill="var(--ink)">24°C</text>
+          <text x="50" y="184" font-family="var(--font-body)" font-size="11" fill="var(--muted)" font-weight="600" letter-spacing="0.1em">PARTLY CLOUDY · HYD</text>
+          <text x="618" y="200" font-family="var(--font-head)" font-size="120" font-weight="700" fill="rgba(255,255,255,0.2)">01</text>
+        </svg>
       </div>
 
-      <!-- Card body: description left | details right -->
       <div class="project-full-body">
-
-        <!-- Left: title, description, features -->
         <div>
-          <span class="project-tag" style="font-size:0.8rem;">HTML · CSS</span>
+          <span class="project-tag">HTML · CSS</span>
           <h2>Weather Dashboard</h2>
-          <p>
-            A clean, responsive weather dashboard that displays current weather conditions
-            including temperature, humidity, wind speed, and a 5-day forecast. Designed with
-            a minimal card-based layout and a focus on readability and visual clarity.
-          </p>
-          <p>
-            The project was built as a front-end layout exercise — structuring complex data
-            visually using only HTML and CSS. Every component (forecast cards, temperature
-            gauges, location header) was hand-coded without any CSS frameworks.
-          </p>
-
-          <!-- What I learned -->
+          <p>A clean, responsive weather dashboard that displays current weather conditions including temperature, humidity, wind speed, and a 5-day forecast. Designed with a minimal card-based layout and a focus on readability and visual clarity.</p>
+          <p>Built as a front-end layout exercise — structuring complex data visually using only HTML and CSS, with every component hand-coded without any CSS frameworks.</p>
           <span class="card-label">WHAT I LEARNED</span>
           <ul class="feature-list">
             <li>Structuring multi-section layouts using CSS Flexbox and Grid</li>
@@ -83,14 +90,10 @@
             <li>Using CSS custom properties (variables) for consistent theming</li>
             <li>Designing reusable card components with hover effects and transitions</li>
           </ul>
-
-          <!-- Project links -->
           <div class="project-links">
             <a href="https://github.com/KarempudiLaasya" class="btn btn-outline" target="_blank">View on GitHub</a>
           </div>
         </div>
-
-        <!-- Right: tech stack + project details -->
         <div>
           <span class="card-label">TECH STACK</span>
           <div class="tech-tags" style="margin-bottom:1.8rem;">
@@ -98,131 +101,87 @@
             <span class="tag">CSS3</span>
             <span class="tag">Flexbox</span>
             <span class="tag">CSS Grid</span>
-            <span class="tag">Media Queries</span>
             <span class="tag">CSS Variables</span>
-            <span class="tag">CSS Animations</span>
           </div>
-
           <span class="card-label">PROJECT DETAILS</span>
-          <!-- Key-value project info list -->
-          <div style="display:flex;flex-direction:column;gap:0.7rem;">
-            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-              <span style="color:var(--muted);">Type</span>
-              <span>Front-End UI</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-              <span style="color:var(--muted);">Category</span>
-              <span>Web Development</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-              <span style="color:var(--muted);">Status</span>
-              <span style="color:var(--accent);">InProgress</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
-              <span style="color:var(--muted);">Year</span>
-              <span>2026</span>
-            </div>
+          <div style="display:flex; flex-direction:column; gap:0.7rem;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem;"><span style="color:var(--muted);">Type</span><span>Front-End UI</span></div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem;"><span style="color:var(--muted);">Category</span><span>Web Development</span></div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem;"><span style="color:var(--muted);">Status</span><span style="color:var(--accent);">In Progress</span></div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;"><span style="color:var(--muted);">Year</span><span>2026</span></div>
           </div>
         </div>
-
       </div>
     </article>
 
-
-    <!-- ====== PROJECT 2: TO-DO LIST APP ====== -->
-    <article class="project-full-card">
-
-      <div class="project-full-img project-img-2" style="height:220px;display:flex;align-items:center;justify-content:center;">
-        <span style="font-family:'Space Grotesk',sans-serif;font-size:5rem;font-weight:700;color:rgba(126,200,227,0.2);user-select:none;">02</span>
+    <!-- PROJECT 2: TO-DO LIST -->
+    <article class="project-full-card fade-up" style="transition-delay: 0.15s;">
+      <div class="project-full-img project-img-2">
+        <!-- Kept your original To-Do SVG -->
+        <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="appBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:var(--surface2)"/>
+              <stop offset="100%" style="stop-color:var(--accent-dim)"/>
+            </linearGradient>
+          </defs>
+          <rect width="900" height="220" fill="url(#appBg2)"/>
+          <rect x="110" y="18" width="440" height="186" rx="16" fill="white"/>
+          <rect x="110" y="18" width="440" height="44" rx="16" fill="var(--accent)"/>
+          <text x="134" y="46" font-family="var(--font-head)" font-size="15" font-weight="700" fill="white">My Tasks</text>
+          <rect x="126" y="74" width="408" height="30" rx="8" fill="var(--bg)"/>
+          <text x="158" y="93" font-family="var(--font-body)" font-size="12" fill="var(--muted)" text-decoration="line-through">Design the homepage layout</text>
+          <text x="720" y="210" font-family="var(--font-head)" font-size="120" font-weight="700" fill="var(--accent-dim)">02</text>
+        </svg>
       </div>
 
       <div class="project-full-body">
-
-        <!-- Left: title, description, features -->
         <div>
-          <span class="project-tag" style="font-size:0.8rem;">HTML · CSS · JavaScript</span>
+          <span class="project-tag">HTML · CSS · JavaScript</span>
           <h2>To-Do List App</h2>
-          <p>
-            A fully functional task management application built with vanilla HTML, CSS,
-            and JavaScript. Users can add new tasks, mark them as complete, delete them,
-            and assign priority labels (High / Medium / Low) to organise their workload.
-          </p>
-          <p>
-            The app uses the browser's <code style="background:var(--surface2);padding:0.1rem 0.4rem;border-radius:4px;font-size:0.85rem;">localStorage</code> API
-            to persist tasks between page refreshes — so your list is never lost when you close the tab.
-            This was my first project introducing JavaScript DOM manipulation and event handling.
-          </p>
-
+          <p>A fully functional task management application built with vanilla HTML, CSS, and JavaScript. Users can add tasks, mark them complete, delete them, and assign priority labels to organise their workload.</p>
+          <p>The app uses <code style="background:var(--accent-dim); color:var(--accent); padding:0.1rem 0.4rem; border-radius:4px; font-size:0.85rem;">localStorage</code> to persist tasks between page refreshes. This was my first project introducing JavaScript DOM manipulation.</p>
           <span class="card-label">KEY FEATURES</span>
           <ul class="feature-list">
-            <li>Add, delete, and mark tasks as complete with instant DOM updates</li>
-            <li>Priority tags (High / Medium / Low) with colour-coded badges</li>
-            <li>Data persistence via localStorage — tasks survive page reloads</li>
+            <li>Add, delete, and mark tasks complete with instant DOM updates</li>
+            <li>Priority tags (High / Medium / Low) with color-coded badges</li>
+            <li>Data persistence via localStorage API</li>
             <li>Filter view: show All / Active / Completed tasks</li>
-            <li>Task counter showing remaining incomplete items</li>
-            <li>Fully responsive — works on mobile and desktop</li>
           </ul>
-
           <div class="project-links">
             <a href="https://github.com/KarempudiLaasya" class="btn btn-outline" target="_blank">View on GitHub</a>
           </div>
         </div>
-
-        <!-- Right: tech stack + project details -->
         <div>
           <span class="card-label">TECH STACK</span>
           <div class="tech-tags" style="margin-bottom:1.8rem;">
             <span class="tag">HTML5</span>
             <span class="tag">CSS3</span>
-            <span class="tag">JavaScript (ES6)</span>
-            <span class="tag">DOM Manipulation</span>
-            <span class="tag">Event Listeners</span>
-            <span class="tag">localStorage API</span>
-            <span class="tag">Flexbox</span>
-            <span class="tag">CSS Transitions</span>
+            <span class="tag">JavaScript ES6</span>
+            <span class="tag">DOM API</span>
+            <span class="tag">localStorage</span>
           </div>
-
           <span class="card-label">PROJECT DETAILS</span>
-          <div style="display:flex;flex-direction:column;gap:0.7rem;">
-            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-              <span style="color:var(--muted);">Type</span>
-              <span>Web Application</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-              <span style="color:var(--muted);">Category</span>
-              <span>Productivity Tool</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:0.85rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem;">
-              <span style="color:var(--muted);">Status</span>
-              <span style="color:var(--accent);">InProgress</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
-              <span style="color:var(--muted);">Year</span>
-              <span>2026</span>
-            </div>
+          <div style="display:flex; flex-direction:column; gap:0.7rem;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem;"><span style="color:var(--muted);">Type</span><span>Web Application</span></div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem;"><span style="color:var(--muted);">Category</span><span>Productivity Tool</span></div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; border-bottom:1px solid var(--border); padding-bottom:0.5rem;"><span style="color:var(--muted);">Status</span><span style="color:var(--accent2);">In Progress</span></div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;"><span style="color:var(--muted);">Year</span><span>2026</span></div>
           </div>
-
-          <!-- Highlight box: what made this project special -->
-          <div style="margin-top:1.8rem;background:var(--accent-dim);border:1px solid var(--accent);border-radius:var(--radius);padding:1rem 1.2rem;">
+          <div style="margin-top:1.8rem; background:var(--accent-dim); border:1px solid var(--accent-soft); border-radius:var(--radius); padding:1rem 1.2rem;">
             <span class="card-label" style="margin-bottom:0.4rem;">HIGHLIGHT</span>
-            <p style="font-size:0.83rem;color:var(--muted);line-height:1.7;">
-              First project to use JavaScript for real interactivity — moving beyond static HTML/CSS
-              into dynamic DOM updates and state management with localStorage.
-            </p>
+            <p style="font-size:0.83rem; color:var(--muted); line-height:1.7;">Moving beyond static HTML/CSS into dynamic DOM updates and persistent state management.</p>
           </div>
-
         </div>
       </div>
     </article>
 
-    <!-- Back link -->
-    <div style="text-align:center;margin-top:1rem;">
+    <div style="text-align:center; margin-top:1rem;" class="fade-up">
       <a href="index.html#projects" class="btn btn-secondary">← Back to Portfolio</a>
     </div>
+  </main>
 
-  </section>
-
-  <!-- ===================== FOOTER ===================== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-links">
       <a href="index.html">Home</a>
@@ -231,9 +190,10 @@
       <a href="https://github.com/KarempudiLaasya" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/laasya-karempudi-705903399/" target="_blank">LinkedIn</a>
     </div>
-    <p class="footer-copy">© 2026 KMS Laasya. Built with HTML &amp; CSS.</p>
+    <p class="footer-copy">© 2026 KMS Laasya. Designed with Royal Purple & Orchid Theme.</p>
   </footer>
-<script src="script.js"></script>
-<script src="cursor.js"></script>
+
+  <script src="script.js"></script>
+  <script src="cursor.js"></script>
 </body>
 </html>

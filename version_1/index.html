@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- Main portfolio page — KMS Laasya — Summary / Landing page -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KMS Laasya — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+<header class="navbar">
+  <a href="#home" class="nav-logo">KMS<span>.</span></a>
+
+  <div class="navbar-right">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- THEME TOGGLE BUTTON -->
+    <button class="theme-toggle" id="themeToggle">
+      <span class="toggle-icon">🌞</span>
+    </button>
+  </div>
+</header>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="home" class="hero">
+
+    <div class="hero-text">
+      <span class="hero-label">👋 Hello, I'm</span>
+      <h1 class="hero-name">KMS Laasya</h1>
+      <p class="hero-role">Computer Science Student &amp; Aspiring Developer</p>
+      <p class="hero-tagline">Passionate about problem solving, AI, and building meaningful software.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#about" class="btn btn-secondary">About Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="Profile_color.png" alt="KMS Laasya" class="profile-photo" />
+    </div>
+
+  </section>
+
+  <!-- ===================== ABOUT SUMMARY ===================== -->
+  <section id="about" class="about-summary">
+
+    <div class="section-number">01 / <span>ABOUT</span></div>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="title-line"></div>
+
+    <div class="about-summary-grid">
+
+      <div class="about-bio">
+        <p>
+          I'm a Computer Science student passionate about problem solving and building
+          intelligent systems. I enjoy working with algorithms, exploring artificial
+          intelligence, and understanding how to design efficient solutions to real-world problems.
+        </p>
+        <p>
+          I focus on writing clear, logical code and continuously improving my analytical
+          thinking. When I'm not coding, I explore new AI concepts, practice problem solving,
+          and work on projects that challenge my thinking.
+        </p>
+        <ul class="about-facts">
+          <li>📍 Hyderabad, India</li>
+          <li>🎓 B.Tech CSE, Year 1</li>
+          <li>💼 Open to internships</li>
+        </ul>
+      </div>
+
+      <div class="tech-stack">
+        <p class="tech-label">Tech Stack</p>
+        <div class="tech-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">Python</span>
+        </div>
+        <a href="about.html" class="btn btn-outline" style="margin-top:2rem;display:inline-block;">Full Profile →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SUMMARY ===================== -->
+  <section id="projects" class="projects-summary fade-up">
+
+    <div class="section-number">02 / <span>PROJECTS</span></div>
+    <h2 class="section-title">What I've Built</h2>
+    <div class="title-line"></div>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <!-- <div class="project-img project-img-1"> -->
+          <div class="project-img"  >
+          <img src="weather.png" alt="Weather App ">
+          <div class="project-overlay">
+            <a href="https://github.com/KarempudiLaasya" class="overlay-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">HTML · CSS</span>
+          <h3>Weather Dashboard</h3>
+          <p>A clean weather UI showing temperature, humidity, and forecast data.</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <!-- <div class="project-img project-img-2"> -->
+          <div class="project-img">
+          <img src="todo.png" alt="To Do App">
+          <div class="project-overlay">
+            <a href="https://github.com/KarempudiLaasya" class="overlay-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">HTML · CSS · JS</span>
+          <h3>To-Do List App</h3>
+          <p>Minimal task manager with add, delete, and mark-complete features.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="projects-more">
+      <a href="projects.html" class="btn btn-outline">See Full Project Details →</a>
+    </div>
+
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="contact">
+
+    <div class="section-number">03 / <span>CONTACT ME</span></div>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="title-line"></div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <div class="contact-bar"></div>
+        <ul class="contact-details">
+          <li>
+            <span class="c-icon">✉️</span>
+            <span>Email: <a href="mailto:kmslaasya@gmail.com">kmslaasya@gmail.com</a></span>
+          </li>
+          <li>
+            <span class="c-icon">🔗</span>
+            <span>LinkedIn: <a href="https://www.linkedin.com/in/laasya-karempudi-705903399/" target="_blank">karempudi_laasya</a></span>
+          </li>
+          <li>
+            <span class="c-icon">🐙</span>
+            <span>GitHub: <a href="https://github.com/KarempudiLaasya" target="_blank">KarempudiLaasya</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" action="mailto:kmslaasya@gmail.com" method="GET" enctype="text/plain">
+          <input  type="text"  name="name"  placeholder="Your Name"  class="form-input" required />
+          <input  type="email" name="email" placeholder="Email"       class="form-input" required />
+          <textarea name="body" placeholder="Message" class="form-input form-textarea" rows="5" required></textarea>
+          <button type="submit" class="btn btn-contact">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="about.html">About Me</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/KarempudiLaasya" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/laasya-karempudi-705903399/" target="_blank">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2026 KMS Laasya. Built with HTML &amp; CSS.</p>
+  </footer>
+<script src="script.js"></script>
+<script src="cursor.js"></script>
+</body>
+</html>
